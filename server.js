@@ -2,7 +2,8 @@ const express=require("express")
 const app=express()
 require('dotenv').config()
 // const port=process.env.PORT
-const port=9000
+// const port=9000
+const port = process.env.PORT || 9000
 const fs=require("fs")
 const nodemailer=require("nodemailer")
 const uuid=require("uuid")
